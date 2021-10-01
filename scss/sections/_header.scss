@@ -1,0 +1,101 @@
+@use "../custom" as *;
+
+#header {
+  height: 92px;
+  padding: 20px 0;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .home {
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .login {
+      position: relative;
+      background-color: $primary;
+      color: #fff;
+      padding: 8px 28px;
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 500;
+      text-transform: uppercase;
+      border-radius: 40px;
+      display: flex;
+
+      i {
+        font-size: 12px;
+        line-height: 27px;
+        padding-right: 8px;
+      }
+
+      &:hover {
+        .login__form {
+          display: block;
+        }
+      }
+
+      .login__form {
+        display: none;
+        position: absolute;
+        top: calc(100% + 16px);
+        right: 0;
+        width: 370px;
+        max-height: 250px;
+        background-color: #fff;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+        padding: 25px 15px;
+
+        form {
+          width: 100%;
+
+          input {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0 10px;
+            border: 1px solid $primary;
+            width: 340px;
+            height: 44px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+          }
+
+          button {
+            width: 100%;
+            background-color: $primary;
+            border: none;
+            height: 44px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+          }
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 80%;
+          top: -10px;
+          // transform: translateX(-50%);
+          width: 0;
+          height: 0;
+          border-left: 20px solid transparent;
+          border-right: 20px solid transparent;
+          border-bottom: 25px solid #fff;
+          clear: both;
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+        }
+      }
+    }
+  }
+}

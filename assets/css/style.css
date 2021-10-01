@@ -1,0 +1,231 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1570px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#header {
+  height: 92px;
+  padding: 20px 0;
+}
+#header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .header .home {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#header .header .home a {
+  text-decoration: none;
+}
+#header .header .login {
+  position: relative;
+  background-color: #e73b2b;
+  color: #fff;
+  padding: 8px 28px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 40px;
+  display: flex;
+}
+#header .header .login i {
+  font-size: 12px;
+  line-height: 27px;
+  padding-right: 8px;
+}
+#header .header .login:hover .login__form {
+  display: block;
+}
+#header .header .login .login__form {
+  display: none;
+  position: absolute;
+  top: calc(100% + 16px);
+  right: 0;
+  width: 370px;
+  max-height: 250px;
+  background-color: #fff;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  padding: 25px 15px;
+}
+#header .header .login .login__form form {
+  width: 100%;
+}
+#header .header .login .login__form form input {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 10px;
+  border: 1px solid #e73b2b;
+  width: 340px;
+  height: 44px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+#header .header .login .login__form form button {
+  width: 100%;
+  background-color: #e73b2b;
+  border: none;
+  height: 44px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+#header .header .login .login__form::before {
+  content: "";
+  position: absolute;
+  left: 80%;
+  top: -10px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 25px solid #fff;
+  clear: both;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+/*# sourceMappingURL=style.css.map */
