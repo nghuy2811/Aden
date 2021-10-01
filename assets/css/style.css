@@ -142,6 +142,90 @@ html {
   margin: 0 auto;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.align-center {
+  align-self: center;
+}
+
+.col {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.col-1 {
+  flex: 0 0 8.3333333333%;
+  max-width: 8.3333333333%;
+}
+
+.col-2 {
+  flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+
+.col-5 {
+  flex: 0 0 41.6666666667%;
+  max-width: 41.6666666667%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  flex: 0 0 58.3333333333%;
+  max-width: 58.3333333333%;
+}
+
+.col-8 {
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.col-10 {
+  flex: 0 0 83.3333333333%;
+  max-width: 83.3333333333%;
+}
+
+.col-11 {
+  flex: 0 0 91.6666666667%;
+  max-width: 91.6666666667%;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.img-fluid {
+  max-width: 100%;
+}
+
+.heading {
+  font-family: "Montserrat", sans-serif !important;
+}
+
 #header {
   height: 92px;
   padding: 20px 0;
@@ -179,6 +263,15 @@ html {
 #header .header .login:hover .login__form {
   display: block;
 }
+#header .header .login:before {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  background-color: transparent;
+}
 #header .header .login .login__form {
   display: none;
   position: absolute;
@@ -186,7 +279,7 @@ html {
   right: 0;
   width: 370px;
   max-height: 250px;
-  background-color: #fff;
+  background-color: #eaeaea;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
   padding: 25px 15px;
 }
@@ -217,15 +310,48 @@ html {
 #header .header .login .login__form::before {
   content: "";
   position: absolute;
-  left: 80%;
-  top: -10px;
+  left: 78%;
+  top: -12px;
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 25px solid #fff;
+  border-bottom: 25px solid #eaeaea;
   clear: both;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+#home-info .home-info__text {
+  padding: 0 30px;
+  text-align: center;
+}
+#home-info .home-info__text__heading {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 150.5%;
+}
+#home-info .home-info__text__heading span {
+  font-size: 48px;
+  color: #e73b2b;
+}
+#home-info .home-info__text__sub-heading {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #e73b2b;
+  margin-top: 40px;
+  padding: 0 40px;
+}
+#home-info .home-info__text__info {
+  margin-top: 60px;
+}
+#home-info .home-info__text__info .info-contents {
+  padding: 0 25px;
+}
+#home-info .home-info__text__info .info-contents .home-info__text__info__content {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */

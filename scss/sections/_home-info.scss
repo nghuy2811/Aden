@@ -1,0 +1,44 @@
+@use "../custom" as *;
+
+#home-info {
+  .home-info {
+    &__text {
+      padding: 0 30px;
+      text-align: center;
+
+      &__heading {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 150.5%;
+        span {
+          font-size: 48px;
+          color: $primary;
+        }
+      }
+
+      &__sub-heading {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
+        color: $primary;
+        margin-top: 40px;
+        padding: 0 40px;
+      }
+
+      &__info {
+        margin-top: 60px;
+
+        .info-contents {
+          padding: 0 25px;
+
+          .home-info__text__info__content {
+            margin-top: 12px;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

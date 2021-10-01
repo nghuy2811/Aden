@@ -3,3 +3,30 @@
   width: 100%;
   margin: 0 auto;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.align-center {
+  align-self: center;
+}
+
+.col {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    flex: 0 0 calc(($i / 12) * 100%);
+    max-width: calc(($i / 12) * 100%);
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+}
