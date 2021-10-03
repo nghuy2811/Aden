@@ -226,6 +226,47 @@ html {
   font-family: "Montserrat", sans-serif !important;
 }
 
+@keyframes fade-in-out {
+  0%, 100% {
+    opacity: 0;
+  }
+  33.33%, 66.66% {
+    /* duration is 3s, so fade-in at 1s, stay till 2s, fade-out from 2s */
+    opacity: 1;
+  }
+}
+@keyframes zoom {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+@keyframes shrink {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+}
+@keyframes move-down-up {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+}
+@keyframes move-right-left {
+  0%, 100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+}
 #header {
   height: 92px;
   padding: 20px 0;
@@ -320,6 +361,17 @@ html {
   clear: both;
 }
 
+#home-info {
+  margin-bottom: 64px;
+}
+#home-info .home-info {
+  position: relative;
+}
+#home-info .home-info .leave_img {
+  position: absolute;
+  top: 10%;
+  right: 100%;
+}
 #home-info .home-info__text {
   padding: 0 30px;
   text-align: center;
@@ -352,6 +404,58 @@ html {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+}
+
+#home-content .home-content .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+#home-content .home-content .col {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#home-content .home-content .content-box {
+  margin-bottom: 35px;
+}
+#home-content .home-content .content-box__img {
+  position: relative;
+  width: 502px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+#home-content .home-content .content-box__img img {
+  width: 100%;
+  height: 502px;
+  transform-origin: left top;
+  /* to be on the safe side */
+  animation-duration: 3s;
+  /* increase only if you want duration to be longer */
+  animation-fill-mode: backwards;
+  /* fill mode - better to not change */
+  animation-iteration-count: 1;
+  /* no. of iterations - don't change */
+  animation-timing-function: ease;
+  /* better to leave as-is but can be changed */
+}
+#home-content .home-content .content-box__img .content-box-img--2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#home-content .home-content .content-box__text-heading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+#home-content .home-content .content-box__text-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-top: 15px;
+}
+#home-content .home-content .content-box:hover .content-box__text-heading {
+  color: #e73b2b;
 }
 
 /*# sourceMappingURL=style.css.map */

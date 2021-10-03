@@ -1,0 +1,47 @@
+@keyframes fade-in-out {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  33.33%,
+  66.66% {
+    /* duration is 3s, so fade-in at 1s, stay till 2s, fade-out from 2s */
+    opacity: 1;
+  }
+}
+@keyframes zoom {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+@keyframes shrink {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+}
+@keyframes move-down-up {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+}
+@keyframes move-right-left {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+}

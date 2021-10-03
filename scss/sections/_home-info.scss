@@ -1,7 +1,16 @@
 @use "../custom" as *;
 
 #home-info {
+  margin-bottom: 64px;
   .home-info {
+    position: relative;
+
+    .leave_img {
+      position: absolute;
+      top: 10%;
+      right: 100%;
+    }
+
     &__text {
       padding: 0 30px;
       text-align: center;

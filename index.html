@@ -96,9 +96,144 @@
             </div>
           </div>
         </div>
+        <img src="./assets/images/leave.png" alt="Leave" class="leave_img">
       </div>
     </div>
   </section>
+  <section id="home-content">
+    <div class="container">
+      <div class="home-content">
+        <div class="row">
+          <div class="col col-4">
+            <div class="content-box">
+              <div class="content-box__img">
+                <img src="./assets/images/home-content/nutrition_1.png" alt="" class="content-box-img--1">
+                <img src="./assets/images/home-content/nutrition_2.png" alt="" class="content-box-img--2">
+              </div>
+              <div class="content-box__text">
+                <div class="content-box__text-heading">Nutrition & Taste</div>
+                <div class="content-box__text-description">Our chefs know how to make make attractive meals to please
+                  each
+                  of our customers, from young pupils...</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-4">
+            <div class="content-box">
+              <div class="content-box__img">
+                <img src="./assets/images/home-content/taste_1.png" alt="" class="content-box-img--1">
+                <img src="./assets/images/home-content/taste_2.png" alt="" class="content-box-img--2">
+              </div>
+              <div class="content-box__text">
+                <div class="content-box__text-heading">Safe & Clean</div>
+                <div class="content-box__text-description">Since we are fully certified HACCP, ISO 9001, 14001 and
+                  22000, we make sure we serve safe food with clean..</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-4">
+            <div class="content-box">
+              <div class="content-box__img">
+                <img src="./assets/images/home-content/creativity_1.png" alt="" class="content-box-img--1">
+                <img src="./assets/images/home-content/creativity_2.png" alt="" class="content-box-img--2">
+              </div>
+              <div class="content-box__text">
+                <div class="content-box__text-heading">Creativity</div>
+                <div class="content-box__text-description">Thanks to our chefs and culinary ambassadors, we are proud of
+                  the thousands recipes we cook in...</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-4">
+            <div class="content-box">
+              <div class="content-box__img">
+                <img src="./assets/images/home-content/garden_to_plant_1.png" alt="" class="content-box-img--1">
+                <!-- <img src="./assets/images/home-content/nutrition_2.png" alt="" class="content-box-img--2"> -->
+              </div>
+              <div class="content-box__text">
+                <div class="content-box__text-heading">From garden to plate</div>
+                <div class="content-box__text-description">We source VietGap and Organic meat, vegetables, fruits, dairy
+                  and more. We also work with... </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-4">
+            <div class="content-box">
+              <div class="content-box__img">
+                <img src="./assets/images/home-content/healthy_diet_1.png" alt="" class="content-box-img--1">
+              </div>
+              <div class="content-box__text">
+                <div class="content-box__text-heading">Healthy diet</div>
+                <div class="content-box__text-description">A healthy diet helps pupills to improve their focus, Aden
+                  always offer healthy recipes and helps...</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-4">
+            <div class="content-box">
+              <div class="content-box__img">
+                <img src="./assets/images/home-content/energy_snack_1.png" alt="" class="content-box-img--1">
+                <img src="./assets/images/home-content/energy_snack_2.png" alt="" class="content-box-img--2">
+              </div>
+              <div class="content-box__text">
+                <div class="content-box__text-heading">Energy Snacks</div>
+                <div class="content-box__text-description">Anytime in the day, students can enjoy our healthy and tasty
+                  snacks. </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $contentBox = $('.content-box');
+      // $img = $('.content-box img'); // the images
+      var anim = ['zoom', 'shrink', 'move-down-up', 'move-right-left']; // the list of random animations
+      var rand = Math.floor(Math.random() * 4) + 1; // random number
+
+      $contentBox.each(function () {
+        $(this).hover(function () {
+          $img = $(this).find('.content-box-img--2');
+          // console.log($img);
+
+          if ($img.length > 0) {
+            console.log("Has 2nd image");
+          } else {
+            console.log("Do not have 2nd image");
+          }
+
+          // $img.each(function () { // attach event handler for each image
+
+          //   $(this).on('animationend', function (e) { // when animation on one image has ended
+
+          //     if (e.originalEvent.animationName == 'fade-in-out') { // check the animation's name
+          //       rand = Math.floor(Math.random() * 4) + 1; // get a random number
+          //       $(this).css('animation-name', 'none'); // remove animation on current element
+          //       if ($(this).next('img').length > 0) // if there is a next sibling
+          //         $(this).next('img').css('animation-name', 'fade-in-out, ' + anim[rand - 1]); // add animation on next sibling
+          //       else
+          //         $img.eq(0).css('animation-name', 'fade-in-out, ' + anim[rand - 1]); // else add animation on first image (loop)
+          //     }
+          //   });
+          // });
+          // $img.eq(0).css('animation-name', 'fade-in-out, ' + anim[rand - 1]); //add animation to 1st element on load
+        })
+      }) -->
+
+
+  })
+  </script>
 </body>
 
 </html>

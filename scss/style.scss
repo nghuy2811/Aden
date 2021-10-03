@@ -3,6 +3,8 @@
 
 @use "./components/layout";
 @use "./components/typography";
+@use "./components/animations";
 
 @use "./sections/header";
 @use "./sections/home-info";
+@use "./sections/home-content";
